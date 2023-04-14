@@ -88,17 +88,19 @@ export default function Sidebar() {
 <nav class="fixed h-20 bottom-0 inset-x-0 bg-white shadow-[5px_-5px_10px_-0px_rgba(0,0,0,0.1)] flex justify-between text-sm  capitalize font-mono">
 
   <a href="#" class="w-full block py-5 px-3 text-center hover:bg-blue-50 transition duration-300">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0d1134" class="w-6 h-6 mb-2 mx-auto">
-  <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mb-2 mx-auto">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
 </svg>
+
 
     Profile
   </a>
 
   <a href="#" class=" w-full block py-5 px-3 text-center hover:bg-blue-50">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#0d1134" class="w-6 h-6 mb-2 mx-auto">
-  <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mb-2 mx-auto">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
 </svg>
+
 
 
 
