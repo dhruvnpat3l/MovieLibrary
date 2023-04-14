@@ -23,8 +23,8 @@ export default function Movies() {
     }
 
     return(
-        <div className="px-4 xl:ml-40">
-            <div className="grid grid-cols-1  sm:grid-cols-2  lg:grid-cols-4 gap-4 m-1.5">
+        <div className="px-4 xl:ml-6">
+            <div className="grid grid-cols-2 md:pl-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 m-1.5">
               {movies.map((movie) => (
                   <Card
                   key={movie.id} 

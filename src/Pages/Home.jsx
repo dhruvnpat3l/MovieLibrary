@@ -29,9 +29,10 @@ export default function Home() {
             <div class=' mt-6 max-w-md mx-auto'>
                 <form onSubmit={handleSubmit} class="md:ml-28 mt-4 relative flex items-center w-full h-12 rounded-lg shadow-lg bg-white overflow-hidden">
                     <div class="grid place-items-center h-full w-12 text-gray-300">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                        </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#0d1134" className="w-5 h-5">
+  <path fillRule="evenodd" d="M9 3.5a5.5 5.5 0 100 11 5.5 5.5 0 000-11zM2 9a7 7 0 1112.452 4.391l3.328 3.329a.75.75 0 11-1.06 1.06l-3.329-3.328A7 7 0 012 9z" clipRule="evenodd" />
+</svg>
+
                     </div>
 
                     <input

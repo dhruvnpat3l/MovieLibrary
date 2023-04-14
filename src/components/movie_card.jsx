@@ -13,8 +13,8 @@ export default function Movie_card(props) {
     }
         return(
             <>
-              <Link to={`/moviedetails/${props.id}`} className="pl-12 mb-8 border-b-2  grid-cols-1 md:grid-cols-3 md:gap-x-4 md:gap-y-8 ">
-                <div className="bg-blue-950  p-2 object-cover w-5/6 mt-3 shadow-[5px_5px_5px_-0px_rgba(0,0,0,0.3)]">
+              <Link to={`/moviedetails/${props.id}`} className="pl-12 mb-8 grid-cols-1 md:grid-cols-3 md:gap-x-4 md:gap-y-8 ">
+                <div className="bg-[#0d1134]  p-2 object-cover w-5/6 mt-3 shadow-[5px_5px_5px_-0px_rgba(0,0,0,0.3)]">
                     <img src={props.image}/>
                 </div>
                 <div className="">

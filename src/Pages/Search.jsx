@@ -28,7 +28,7 @@ export default function Search() {
                         <p>No result found for {query}</p>
                     ):(
                           <div className="px-4 xl:ml-40">
-                            <div className="grid grid-cols-1  sm:grid-cols-2  lg:grid-cols-4 gap-4 m-1.5">
+                            <div className="grid grid-cols-2  sm:grid-cols-2  lg:grid-cols-4 gap-4 m-1.5">
                                 {searchResults.map((movie) => (
                                     <Movie_card
                                     key={movie.id} 
