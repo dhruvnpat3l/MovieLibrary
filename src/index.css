@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Motley";
+    src: url(./assets/font/MotleyForcesRegular-w1rZ3.ttf);
+}
+
+@font-face {
+    font-family: "Rubik";
+    src: url('./assets/font/Rubik-Italic-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "Movie";
+    src: url('./assets//font/DezertDemoItalicDash-BWLA5.ttf');
+}
