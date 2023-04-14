@@ -26,7 +26,7 @@ export default function Home() {
         <div className="">
 
             {/*searchbar  */}
-            <div class=' mt-6 max-w-md mx-auto'>
+            <div class='mx-6 mt-6 max-w-md sm:mx-auto'>
                 <form onSubmit={handleSubmit} class="md:ml-28 mt-4 relative flex items-center w-full h-12 rounded-lg shadow-lg bg-white overflow-hidden">
                     <div class="grid place-items-center h-full w-12 text-gray-300">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#0d1134" className="w-5 h-5">
