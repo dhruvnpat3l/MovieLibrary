@@ -26,7 +26,7 @@ export default function Home() {
     return(
         <div className="relative">
             {/* logo for android */}
-            <nav className="md:hidden fixed top-0 left-0 right-0 flex items-center h-max mx-auto text-slate-800 bg-white text-lg shadow-md">
+            <nav className="z-10 md:hidden fixed top-0 left-0 right-0 flex items-center h-max mx-auto text-slate-800 bg-white text-lg shadow-md">
                     <a><img className="h-16" src={logo} /></a>
                         <ul className="flex">
                             <li className="p-4" >

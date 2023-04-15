@@ -82,7 +82,7 @@ export default function Sidebar() {
   </nav>
 </div>
   {/* <!-- Bottom nav bar --> */}
-  <div class="w-full fixed bottom-0 md:hidden">
+  <div class="z-10 w-full fixed bottom-0 md:hidden">
 
 {/* <!-- fixed nav --> */}
 <nav class="fixed h-20 bottom-0 inset-x-0 bg-white shadow-[5px_-5px_10px_-0px_rgba(0,0,0,0.1)] flex justify-between text-sm  capitalize font-mono">
