@@ -31,7 +31,7 @@ export default function MovieDetails(){
       // </div>
 
       // <!-- Use a card component with a gradient background and rounded corners -->
-<div class="max-w-md mx-20 md:ml-40 md:mr-10 bg-white  rounded mt-10 md:mt-0 mb-28 shadow-md overflow-hidden md:max-w-2xl ">
+<div class="max-w-md mx-10 md:ml-40 md:mr-10 bg-white  rounded mt-10 md:mt-0 mb-28 shadow-md overflow-hidden md:max-w-2xl ">
   {/* <!-- Use a flex layout with a row direction for the card content --> */}
   <div class="md:flex">
     {/* <!-- Use a flex item for the image with a fixed width and a clip path --> */}
