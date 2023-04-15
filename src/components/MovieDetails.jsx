@@ -55,12 +55,12 @@ export default function MovieDetails(){
                             <span
                               className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-[#0d1134] transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
                             ></span>
-                            <button
+                            <label
                               className="bg-white relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-black group-active:text-opacity-75"
                               
                             >
                               Add to Watchlist
-                            </button>
+                            </label>
                         </div>
                     </div>
       </ul>
