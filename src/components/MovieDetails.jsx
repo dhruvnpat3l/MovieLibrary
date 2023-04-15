@@ -31,12 +31,12 @@ export default function MovieDetails(){
       // </div>
 
       // <!-- Use a card component with a gradient background and rounded corners -->
-<div class="max-w-md mx-10 md:ml-40 md:mr-10 bg-white  rounded mt-10 md:mt-0 mb-28 shadow-md overflow-hidden md:max-w-2xl ">
+<div class=" mx-10 md:ml-40 md:mr-10 bg-white  rounded mt-10 md:mt-0 mb-28 shadow-md overflow-hidden md:max-w-5xl ">
   {/* <!-- Use a flex layout with a row direction for the card content --> */}
-  <div class="md:flex">
+  <div class="sp:flex">
     {/* <!-- Use a flex item for the image with a fixed width and a clip path --> */}
     <div class="bg-[#0d1134] rounded  p-2 object-cover min-w-fit">
-      <img src={`https://image.tmdb.org/t/p/w500/${movieDetails.poster_path}`} alt={movieDetails.title} class="h-full w-full object-cover md:w-48 clip-path[polygon(0%_0%,_100%_0%,_75%_100%,_0%_100%)]" />
+      <img src={`https://image.tmdb.org/t/p/w500/${movieDetails.poster_path}`} alt={movieDetails.title} class="h-full object-cover  sp:w-48 clip-path[polygon(0%_0%,_100%_0%,_75%_100%,_0%_100%)]" />
     </div>
     {/* <!-- Use another flex item for the text content with some margin and padding --> */}
     <div class="p-8">

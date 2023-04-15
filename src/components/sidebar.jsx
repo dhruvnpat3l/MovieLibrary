@@ -10,7 +10,7 @@ export default function Sidebar() {
         <div>
   {/* <!-- Sidebar --> */}
  
-          <div id="docs-sidebar" class="bg hs-overlay hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 left-0 bottom-0 z-[60] w-64 bg-white  shadow-lg pb-10 overflow-y-auto scrollbar-y md:block md:translate-x-0 md:right-auto md:bottom-0 dark:scrollbar-y ">
+          <div id="docs-sidebar" class="bg hs-overlay hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform  fixed top-0 left-0 bottom-0 z-[60] w-64 bg-white  shadow-lg pb-10 overflow-y-auto scrollbar-y md:block md:translate-x-0 md:right-auto md:bottom-0 dark:scrollbar-y ">
           {/* logo */}
           <div className="shadow-md  border-black">
             <img src={logo} />

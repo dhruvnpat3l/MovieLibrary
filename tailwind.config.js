@@ -5,13 +5,18 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'sp': '380px',
+      },
+    },
     fontFamily:{
       'motley':['Motley'],
       'rubik' : ['Rubik'],
       'movie':['Movie'],
       'cartoon': ['\"Comic Neue\"', 'cursive']
     },
+    
   },
   plugins: [],
 }
