@@ -12,6 +12,7 @@ import Search from "./Search";
 import Sidebar from "../components/sidebar";
 import { AuthProvider } from "../config/Context";
 import Watchlist from "./Watchlist";
+import ProfilePage from "./Profile";
 
 
 export default function Home() {
@@ -85,6 +86,7 @@ export default function Home() {
                     <Route path='/moviedetails/:movieid' element={<MovieDetails/>}/> 
                     <Route path='/search/:query'element={<Search/>} />
                     <Route path="/watchlist" element={<Watchlist/>} />
+                    <Route path="/profile" element={<ProfilePage/>} />
                 </Routes>
             </div>
             </div>

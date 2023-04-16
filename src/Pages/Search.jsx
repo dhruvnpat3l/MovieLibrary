@@ -25,7 +25,7 @@ export default function Search() {
             <div>
                 {
                     searchResults.length === 0 ? (
-                        <p>No result found for {query}</p>
+                        <p className="mt-10 ml-10">No result found for {query}</p>
                     ):(
                           <div className="px-4 xl:ml-40">
                             <div className="grid grid-cols-2   sm:grid-cols-2  lg:grid-cols-4 gap-4 m-1.5">

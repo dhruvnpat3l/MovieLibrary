@@ -29,7 +29,7 @@ export default function Sidebar() {
           </div>
             <nav class="hs-accordion-group p-6 w-full flex flex-col flex-wrap" data-hs-accordion-always-open>
               <ul class="space-y-1.5">
-              <a class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm font-semibold rounded-md hover:bg-gray-100 " href="javascript:;">
+              <Link to={'/profile'} class="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm font-semibold rounded-md hover:bg-gray-100 " href="javascript:;">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0d1134" className="w-6 h-6">
                 <path fillRule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clipRule="evenodd" />
               </svg>
@@ -40,7 +40,7 @@ export default function Sidebar() {
             <path d="M2 11L8.16086 5.31305C8.35239 5.13625 8.64761 5.13625 8.83914 5.31305L15 11" stroke="currentColor" stroke-width="2" stroke-linecap="round"></path>
           </svg>
 
-        </a>
+        </Link>
       <li>
         <Link to={'/'} class="flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm font-semibold rounded-md hover:bg-gray-100 " href="javascript:;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0d1134" className="w-6 h-6">
@@ -107,13 +107,13 @@ export default function Sidebar() {
 {/* <!-- fixed nav --> */}
 <nav class="fixed h-20 bottom-0 inset-x-0 bg-white shadow-[5px_-5px_10px_-0px_rgba(0,0,0,0.1)] flex justify-between text-sm  capitalize font-mono">
 
-  <a href="#" class="font-semibold w-full block py-5 px-3 text-center hover:bg-blue-50 transition duration-300">
+  <Link to='/profile' href="#" class="font-semibold w-full block py-5 px-3 text-center hover:bg-blue-50 transition duration-300">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0d1134" class="w-6 h-6 mb-2 mx-auto">
   <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd" />
 </svg>
 
     Profile
-  </a>
+  </Link>
 
   <Link to={'/'} class="font-semibold w-full block py-5 px-3 text-center hover:bg-blue-50">
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#0d1134" className="w-6 h-6 mb-2 mx-auto">
