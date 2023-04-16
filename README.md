@@ -19,6 +19,8 @@ Check out the live demo [here](https://cowmoovies.web.app/) .
 
 ###  📱 Mobile View
 
+<img src='./README_PHOTO/mobile_watchlist.jpg' width="500">
+
 ###  💻 Laptop View
 
 ## 🛠️ Installation
@@ -49,6 +51,7 @@ VITE_TMDB_API_KEY=your_tmdb_api_key
 ## 🔑 Authentication
 
 The app uses Firebase Authentication to authenticate users. Users can sign in with their Google account.
+
 
 ## 🎬 Movie Data
 
