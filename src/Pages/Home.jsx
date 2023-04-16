@@ -5,12 +5,14 @@ import Searchlogo from '../assets/images/magnifier.png'
 
 import Movies from "../components/movies";
 import MovieDetails from "../components/MovieDetails";
-import Login from '../auth/Login'
+
 
 import { useState } from "react";
 import Search from "./Search";
 import Sidebar from "../components/sidebar";
-import SearchBar from "../components/Search_bar";
+import { AuthProvider } from "../config/Context";
+import Watchlist from "./Watchlist";
+
 
 export default function Home() {
     
@@ -24,7 +26,7 @@ export default function Home() {
     
 
     return(
-        <div className="relative">
+        <AuthProvider className="relative">
             {/* logo for android */}
             <nav className="z-10 md:hidden fixed top-0 left-0 right-0 flex items-center h-max mx-auto text-slate-800 bg-white text-lg shadow-md">
                     <a><img className="h-16" src={logo} /></a>
@@ -82,10 +84,10 @@ export default function Home() {
                     <Route path='/' element={<Movies/>}/>
                     <Route path='/moviedetails/:movieid' element={<MovieDetails/>}/> 
                     <Route path='/search/:query'element={<Search/>} />
-                    <Route path="/login" element={<Login/>}/>
+                    <Route path="/watchlist" element={<Watchlist/>} />
                 </Routes>
             </div>
             </div>
-        </div>
+        </AuthProvider>
     )
 }

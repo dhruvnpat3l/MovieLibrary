@@ -1,22 +1,42 @@
 import axios from "axios";
-import { useEffect, useState } from "react"
+import { useContext, useEffect, useState } from "react"
 import { useParams } from "react-router-dom";
+import { db, firebaseauth } from "../config/store";
+import { get, ref } from "firebase/database";
+import { AuthContext } from "../config/Context";
 
 
 export default function MovieDetails(){
 
     const [movieDetails, setmovieDetails] = useState(null);
     const { movieid } = useParams();
+   
+    const {writeUserData,onBookmark,removeBookmark,isAddedToWatchlist,setIsAddedToWatchlist} = useContext(AuthContext);
 
     useEffect( () => {
         axios.get(`https://api.themoviedb.org/3/movie/${movieid}?api_key=${import.meta.env.VITE_TMDB_KEY}`)
              .then(response => setmovieDetails(response.data))
              .catch(error => console.log('error fetching movie details: ',error));
-    },[movieid]);
+
+             const checkIfAddedToWatchlist = async () => {
+              const name = await firebaseauth.currentUser.displayName;
+              const starCountRef = ref(db, `users/${name}/watchlist/${movieid}`);
+              get(starCountRef).then((snapshot) => {
+                if (snapshot.exists()) {
+                  setIsAddedToWatchlist(true);
+                } else {
+                  setIsAddedToWatchlist(false);
+                }
+              });
+            };
+            checkIfAddedToWatchlist();
+    },[]);
 
     if(!movieDetails){
         return <div>Loading ... {console.log(movieid)}</div>
     }
+    
+
     return(
 
       //   <div className="p-4">
@@ -49,20 +69,44 @@ export default function MovieDetails(){
         <li class="my-2 text-[#0d1134]"><strong>Rating:</strong> {movieDetails.vote_average} / 10</li>
     {/* add to watchlist */}
     <div className="pt-4 pb-4">
-                        <div
+                        
+                        
+                          {isAddedToWatchlist ? 
+                            <> 
+                            <div
                             className="group relative inline-block focus:outline-none "
                         >
                             <span
                               className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-[#0d1134] transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
                             ></span>
-                            <a src="df"
+                            <a onClick={() => removeBookmark(movieid)} src="df"
                               className="bg-white relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-black group-active:text-opacity-75"
                               
                             >
-                              Add to Watchlist
+                              Remove
                             </a>
                         </div>
+                            </>
+                          :
+                          <>
+                             <div
+                            className="group relative inline-block focus:outline-none "
+                        >
+                            <span
+                              className="absolute inset-0 translate-x-1.5 translate-y-1.5 bg-[#0d1134] transition-transform group-hover:translate-y-0 group-hover:translate-x-0"
+                            ></span>
+                            <a onClick={() => onBookmark(movieid)} src="df"
+                              className="bg-white relative inline-block border-2 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest text-black group-active:text-opacity-75"
+                              
+                            >
+                              Add to watchlist
+                            </a>
+                        </div>
+                          </>
+                          }
+                        
                     </div>
+
       </ul>
     </div>
   </div>
