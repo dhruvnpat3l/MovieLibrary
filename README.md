@@ -40,3 +40,15 @@ REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
 REACT_APP_FIREBASE_APP_ID=your_app_id
 REACT_APP_TMDB_API_KEY=your_tmdb_api_key
 ````
+
+5. Run 'npm run dev' to start the development server
+
+6. Open http://localhost:8000 to view the app in the browser
+
+## 🔑 Authentication
+
+The app uses Firebase Authentication to authenticate users. Users can sign up using their email and password or sign in with their Google account.
+
+## 🎬 Movie Data
+
+The app fetches movie data from the TMDB API. Users can view movie details, search for movies, and add movies to their watchlist.
