@@ -18,6 +18,8 @@ Check out the live demo [here](https://cowmoovies.web.app/) .
 ## 📷 Screenshots
 
 ###  📱 Mobile View
+![Watchlist] (https://user-images.githubusercontent.com/92198727/232345446-a0c33645-a383-46d8-968c-14a5322587ef.jpg)
+ Mobile View
 
 <img src='./README_PHOTO/mobile_watchlist.jpg' width="500">
 
