@@ -12,7 +12,8 @@ export default function Watchlist() {
       return storedMovies ? JSON.parse(storedMovies) : [];
     });
     const { user } = useContext(AuthContext);
-  
+    const [movielength , setmovieLength] = useState(0);
+    console.log(movielength)
     useEffect(() => {
       const fetchData = async () => {
       
@@ -35,9 +36,10 @@ export default function Watchlist() {
                 poster: `https://image.tmdb.org/t/p/w500${data.poster_path}`,
                 releaseDate: data.release_date  ,
               };
-              console.log(movieData)
+            
               result.push(movieData);
             }
+            setmovieLength(result.length)
             setMovies(result);
             localStorage.setItem("watchlist", JSON.stringify(result));
           }
@@ -46,9 +48,17 @@ export default function Watchlist() {
   
      fetchData()
     }, [user]);
+
+    if(!user){
+      return <div className="mt-8 sm:mt-10 sm:ml-10 md:ml-32 ml-2"> Login First</div>
+    }
+
   
     return (
       <div className="px-4 xl:ml-6">
+        {
+          movielength > 0 ? 
+          
       <div className="grid grid-cols-2 md:pl-16 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 m-1.5">
         {movies.map((movie) => (
             // <Card
@@ -97,6 +107,11 @@ export default function Watchlist() {
         ))}
        
       </div>
+          :
+          <div className="mt-8 sm:mt-10 sm:ml-10 md:ml-32 ml-2">
+             Add Movie to Watchlist
+          </div> 
+        }
 </div>
     );
   }

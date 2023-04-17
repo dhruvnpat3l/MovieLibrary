@@ -5,6 +5,7 @@ import { db, firebaseauth, provider } from "./store";
 import { getDatabase,ref, set,get, child, remove } from "firebase/database";
 
 import { useAuthState} from 'react-firebase-hooks/auth'
+import { AlternateEmail } from "@mui/icons-material";
 
 export const AuthContext = createContext(null);
 
@@ -52,10 +53,14 @@ export const AuthProvider = ({children}) => {
     //onBookmark
     const onBookmark=(movieId)=>{
                          
+        if (!firebaseauth.currentUser){
+            alert('Login first')
+        }
+        else(
         set(ref(db, `users/${firebaseauth.currentUser.displayName}/watchlist/${movieId}`), {
             movie: {movieId},
-          });
-          setIsAddedToWatchlist(true)
+          }),
+          setIsAddedToWatchlist(true))
      }
 
      const removeBookmark=(movieId)=>{
