@@ -19,11 +19,15 @@ Check out the live demo [here](https://cowmoovies.web.app/) .
 
 ###  📱 Mobile View
 
+#### Watchlist
 <img src='./README_PHOTO/mobile_watchlist.jpg' height="400" alt='watchlist'>
 
 ###  💻 Laptop View
 
+#### Wathchlist 
 <img src='./README_PHOTO/Laptop_Watchlist.png' height="400" alt='watchlist'>
+
+#### Profile 
 <img src='./README_PHOTO/Laptop_Profile.png' height="400" alt='watchlist'>
 
 
