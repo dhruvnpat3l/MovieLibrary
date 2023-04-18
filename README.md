@@ -23,6 +23,10 @@ Check out the live demo [here](https://cowmoovies.web.app/) .
 
 ###  💻 Laptop View
 
+<img src='./README_PHOTO/Laptop_Watchlist.png' height="400" alt='watchlist'>
+<img src='./README_PHOTO/Laptop_profile.png' height="400" alt='watchlist'>
+
+
 ## 🛠️ Installation
 
 1. Clone the repository
